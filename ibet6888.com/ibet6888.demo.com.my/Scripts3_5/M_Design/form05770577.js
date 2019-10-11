@@ -1,0 +1,4 @@
+var formInput=function(){$(".inputClean").bind('input propertychange focusin',function(){var input_delete=$(this).parent().find('.lnk-delete');if($(this).val()!=''){input_delete.show();}else{if(!$(this).hasClass('form_password')){input_delete.hide();}}});$(".inputClean").focusout(function(event){$(this).parent().find('.lnk-delete').delay(200).fadeOut(0);if($(this).hasClass('form_password')){$(this).next().next().next().delay(200).show(0);}});$(".lnk-delete").click(function(event){$(this).parent().find('input').val('').trigger('focusout').trigger('focus');});$(".lnk-eye").click(function(event){var form_password=$(this).parent().find('.form_password');if($(this).hasClass('bg-eye')){$(this).removeClass('bg-eye').addClass('bg-eyeBlue')
+form_password.attr('type','text');}else{$(this).removeClass('bg-eyeBlue').addClass('bg-eye')
+form_password.attr('type','password');}});}
+formInput();

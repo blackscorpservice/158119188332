@@ -1,0 +1,41 @@
+function BackFlip(){loadingOn();window.history.back();}
+function Back_HomeFlip(){HomeFlip();}
+function HomeFlip(){loadingOn();window.location="/M_Nonelogin/Mainpage/";}
+function Login_HomeFlip(){loadingOn();window.location="/M_Alreadylogin/Mainpage/";}
+function LoginFlip(jumpMod){loadingOn();window.location="/M_Nonelogin/Top/";if(jumpMod){window.location="/M_Nonelogin/Top/?jumpCase="+jumpMod;}
+else{window.location="/M_Nonelogin/Top/";}}
+function PromotionFlip(){loadingOn();window.location="/M_Promotion/MobileMainPage"}
+function PromotionFlip_Intl(path){loadingOn();window.location=path;}
+function RegisterFlip(){loadingOn();window.location="/M_Nonelogin/Register/";}
+function ProfileFlip(){loadingOn();window.location="/M_Profile/ProfileInfo/";}
+function ProfileMemberFlip(){loadingOn();window.location="/M_Profile/ProfileChange/";}
+function ProfileMenuFlip(){loadingOn();window.location="/M_VUC/ProfileMenu/";}
+function ChangePasswordFlip(){loadingOn();window.location="/M_Profile/ChangePassword/";}
+function TransferFlip(){loadingOn();window.location="/M_Transfer/Transfer/";}
+function HistoryListFlip(){loadingOn();window.location="/History/HistoryList/";}
+function personalHistory(){loadingOn();window.location="/M_History/PersonalHistory/";}
+function WithdrawalFlip(){loadingOn();window.location="/M_CashFlow/Withdrawal/";}
+function PromoSelfFlip(){loadingOn();window.location="/M_PromoSelf/PromoSelf/";}
+function PromoSelfFlipByPID(id){loadingOn();window.location="/M_PromoSelf/PromoSelf?Jump=true&PID="+id;}
+function DepositFlip(){loadingOn();window.location="/M_CashFlow/Deposit/";}
+function DepositBankFlip(){loadingOn();window.location="/M_CashFlow/DepositATM/";}
+function ComposeFlip(){loadingOn();window.location="/M_Mail/Compose/";}
+function InboxFlip(){loadingOn();window.location="/M_Mail/Inbox/";}
+function BackupFlip(){loadingOn();window.location="/M_Mail/Backup/";}
+function LoginSignInSystemAuthenticat(){OpenDialog(ResStatus.SignInAuthenticatMsg);}
+function LoginSignInSystemFlip(){window.open("/Login/LoginSignInSystem/");}
+function LoginLotterySystemFlip(){window.open("/Login/LoginLotterySystem/");}
+function LoginChallengeSystem(){window.open("/Login/LoginChallengeSystem/");}
+function LoginHeroesActivitySystemFlip(){window.open("/Login/LoginHeroesActivitySystem/");}
+function CouponFlip(){loadingOn();window.location="/M_AlreadyLogin/Coupon/";}
+function HelperCenterFlip(){loadingOn();window.location="/M_OnlineService/HelpCenter/";}
+function OnlineCustomerFlip(){loadingOn();window.location="/M_OnlineService/CustomerService/";}
+function OpinionFlip(){loadingOn();window.location="/M_OnlineService/Opinion/";}
+function CallbackFlip(){loadingOn();window.location="/M_OnlineService/Callback/";}
+function GameDownloadFlip(){loadingOn();window.location="/M_GameDownload/GameDownload/";}
+function GameDownload_TabletFlip(){loadingOn();window.location="/M_GameDownload/GameDownload_Tablet/";}
+function ForgotPasswordFlip(){loadingOn();window.location="/M_NoneLogin/ForgotPassword/";}
+function HttpContextTest(){loadingOn();window.location="/NoneLogin/HttpContextTest/";}
+function Profile_ChangeBackFlip()
+{var Msg=$('#Profile_BackMsg').val();var request=confirm(Msg);var form=$('.ui-personalForm');var check=false;form.find('input[data-require="true"]').each(function(i,row){if($(row).val().trim()==""){check=true;}});if(check)
+{if(request){ProfileFlip();}}}

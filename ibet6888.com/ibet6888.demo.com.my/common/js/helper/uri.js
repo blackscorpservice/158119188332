@@ -1,0 +1,3 @@
+function getParameterName(skey){var s=location.search.replace(/^\?/,'');if(s==''||skey==null||skey=='')return unescape(s);var re=new RegExp('(&|^)'+skey+'=([^&]*)(&|$)');var a=re.exec(s);return unescape(a?a[2]:'');}
+function asset(){var _RootUrl=(function(addPath){var _protocol=location.protocol,_hostname=location.hostname,_webSiteName=location.pathname.split("/")[1],_addPath="";if(!addPath){_addPath="";}else{if(addPath.indexOf('/')==0){_addPath=addPath.substr(1);}else{_addPath=addPath;}}
+return _protocol+"//"+_hostname+"/"+_webSiteName+"/"+_addPath;})();return getVerUrl=function(path){path=path||"";return _RootUrl+path;}}

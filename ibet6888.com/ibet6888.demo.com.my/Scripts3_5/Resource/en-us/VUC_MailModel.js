@@ -1,0 +1,1 @@
+var MailModel={MailAlready:"This mail has already subscribed",Success:"Thanks for your subscription!",ErrorMail:"Please enter the correct email address."};

@@ -1,0 +1,4 @@
+$(window).on("load",function(e){$("body").removeClass("preload");});$(window).scroll(function(){if($(document).scrollTop()>95){$('nav').addClass('stick');}else{$('nav').removeClass('stick');}});$(window).on('resize orientationchange',function(){$('.promo-list').slick('resize');$('.banner-nav').slick('resize');});var settingMobileCheck=function(){var pgwBrowser=$.pgwCustomBrowser();var isMobile=pgwBrowser.device.mobile||pgwBrowser.os.name==='iPad'||pgwBrowser.os.name==='Android'
+window.localStorage["mobile"]=isMobile;if(isMobile){$('body').addClass('is-mobile');}}
+var appInit=function(){settingMobileCheck();}
+$(function(){appInit();});

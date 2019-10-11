@@ -1,0 +1,2 @@
+var BetaRes={Hint:'Thank you for your experience!<br>This beta feature is not available now.'};var SystemRes={AlertCloseButton:'Close',CancelButton:'Cancel',OKButton:'OK'}
+var ResStatus={StatusMsg:'This account is currently disabled , and if in doubt , <br> please contact the online customer service 24 hours',SignInAuthenticatMsg:'Verify your cellphone number to participate this promotion！',ProductMaintenanceMsg:'Maintenance Couldn\'t participate the promotion now.'};
